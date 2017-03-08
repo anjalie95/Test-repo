@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Javascript</title>
+        <script type="text/javascript">
+            var x;
+            var y;
+            var z;
+            function func1(){
+                x=prompt("enter");
+            }
+            function func2() {
+                y=prompt("enter");
+            
+            }
+            function func3(){
+                z=prompt("enter");
+            }
+            function func4(){
+            y=parseInt(y);
+            z=parseInt(z);
+            if (x=="+")
+                var result=(z+y);
+            else if(x=="-")
+        
+                var result=(y-z);
+            else if(x=="*")
+                var result=(z*y);
+            else if(x=="/")
+                var result=(y/z);
+            
+            
+            
+           
+            document.getElementById("demo").innerHTML=result;
+            }
+            
+        </script>
+    </head>
+    <style>
+        body {
+            margin-left: 200px;
+            background-color: aquamarine;
+        }
+        
+        #btn {
+            margin-top: 300px;
+            
+        }
+        .but {
+            height: 50px;
+            width: 300px;
+            font-size: 20px;
+            background-color: black;
+            color:white;
+            margin-right: 20px;
+            
+        }
+        #demo {
+            font-size: 80px;
+            color: solid black;
+            padding-left: 1000px;
+            
+        }
+        
+        
+    </style>
+    <body>
+        <p id="demo"></p>
+       <div id="btn">
+        <button class="but" onclick="func1()">
+        Enter an operator</button>
+        
+        <button class="but" onclick="func2()">
+        Enter 1st num</button>
+        <button class="but" onclick="func3()">
+        Enter 2nd num</button>
+        <button class="but" onclick="func4()">
+        Answer</button>
+        </div>  
+
+    </body>
+</html>
